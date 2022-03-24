@@ -1,4 +1,4 @@
--------------------------
+%-------------------------
 % Resume in Latex
 % Author : Ajay Gowda
 % Based off of: https://github.com/sb2nov/resume
@@ -90,7 +90,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{0pt}}
   }
 }
 
@@ -162,12 +162,14 @@
       \resumeSubSubheading
         {\underline{Systems Validation Engineer}}{Sep 2020 - Present}
       \resumeItemListStart
-        \resumeItem{\normalsize{Design, develop and execute automated firmware tests on current and next gen products for regression testing.}}
+        \resumeItem{\normalsize{Design, develop and execute automated firmware tests to validate system requirements
+        like OCPP and ISO-65851 / ISO-15118 compatibility, happy/unhappy paths, and custom features.}}
         \resumeItem{\normalsize{Develop, deploy and maintain data acquisition infrastructure like databases, visualization tools and vpns on AWS.}}
         \resumeItem{\normalsize{Design and develop one off test setups for unique test scenarios including data acquisition and generating reports.}}
         \resumeItem{\normalsize{Design and develop test benches for correct and repeatable hardware and software validation and verification.}}
+        \resumeItem{\normalsize{Assist customers with highly customized charging infrastructure implementation.}}
         \resumeItem{\normalsize{Assist with pre-compliance testing for certifications such as Energy Star and UL.}}
-        \resumeItem{\normalsize{Develop and maintain EOL (End of Line) test applications.}}
+        %\resumeItem{\normalsize{Develop and maintain EOL (End of Line) test applications.}}
       \resumeItemListEnd
     \resumeSubSubHeadingListEnd
 
@@ -177,11 +179,11 @@
       \resumeSubSubheading
         {\underline{Development and Validation Engineer}}{Aug 2018 – Jul 2020}
       \resumeItemListStart
-        \resumeItem{\normalsize{Troubleshoot issues with prototype and production Photovoltaic Test Equipment in
+        \resumeItem{\normalsize{Troubleshoot issues with prototype and production photovoltaic Test Equipment in
         Lab and Manufacturing lines.}}
-        \resumeItem{\normalsize{Work with partners to develop and improve new test machines by adding features and
-        fixing critical hardware/software bugs.}}
-        \resumeItem{\normalsize{Design and develop control architecture for complex machines to enable optimal
+        \resumeItem{\normalsize{Work with customers on development projects by fixing critical issues, adding features
+        and tuning prototype machines.}}
+        \resumeItem{\normalsize{Design and develop control architecture for photovoltaic test machines to enable optimal
         performance and data acquisition.}}
       \resumeItemListEnd
     \resumeSubSubHeadingListEnd
@@ -195,10 +197,11 @@
         \resumeItem{\normalsize{Develop efficient powertrains with optimal fuel economy and exceptional performance
               via work on batteries, motors,hydraulic systems, internal combustion engines, and power electronics.}}
         \resumeItem{\normalsize{Ensure vehicle test fleet is up to date with latest hardware and software.}}
-        \resumeItem{\normalsize{Analyze and collect data from vehicles on test tracks, in extreme locations,
-              and state of the art high feature test cell using vehicle monitoring software and hardware.}}
+        \resumeItem{\normalsize{Collect and analyse data from vehicles on test tracks, in extreme locations,
+              and state of the art high feature test cell susing vehicle monitoring software and hardware.}}
         \resumeItem{\normalsize{Validate new hybrid and electric powertrains subjectively and objectively.}}
-        \resumeItem{\normalsize{Construct one-off wiring harnesses that include high voltage and CAN communication loops.}}
+        \resumeItem{\normalsize{Ensure vehicle test fleet is up to date with latest hardware and software.}}
+        %\resumeItem{\normalsize{Construct one-off wiring harnesses that include high voltage and CAN communication loops.}}
       \resumeItemListEnd
 
       \resumeSubSubheading
@@ -215,15 +218,14 @@
       \resumeSubSubheading
         {\underline{Research Assistant at EcoCAR Laboratory}}{Oct 2013 -- Jun 2015}
       \resumeItemListStart
-        \resumeItem{\normalsize{Research Assistant at UW EcoCAR Lab.}}
-        \resumeItem{\normalsize{Build and run software models to assess feasible hybrid powertrains }}
+        \resumeItem{\normalsize{Build, run and assess hybrid powertrains configuration for real world feasibility}}
         \resumeItem{\normalsize{Worked on control logic of the supervisory controller that interlinks the two powertrains. (Electric and Diesel)}}
       \resumeItemListEnd
     \resumeSubSubHeadingListEnd
 
 
   \resumeSubHeadingListEnd
-\vspace{-12pt}
+\vspace{-10pt}
 
 %-----------EDUCATION-----------
 \section{EDUCATION}
@@ -232,21 +234,18 @@
       {UNIVERSITY OF WASHINGTON}{Seattle, USA}
     \resumeSubSubHeadingListStart
       \resumeSubSubheading
-        {Master of Science in ME, Control Systems - \textbf{CGPA} - \textbf{3.6/4.0}}{Sept 2013 -- May 2015}
+        {Master of Science in ME, Control Systems}{Sept 2013 -- May 2015}
       \resumeItemListStart
         \resumeItem{\normalsize{Linear Controls, Digital controls, Optimal Controls}}
         \resumeItem{\normalsize{Master’s Thesis - System Level Modeling and Simulation of a Hybrid Vehicle.}}
       \resumeItemListEnd
     \resumeSubSubHeadingListEnd
 
-  \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
     \resumeSubheading
-      {MANIPAL INSTITUE OF TECHNOLOGY}{Manipal, India}
+      {MANIPAL INSTITUTE OF TECHNOLOGY}{Manipal, India}
     \resumeSubSubHeadingListStart
       \resumeSubSubheading
-        {Bachelor of Science in Mechatronics Engineering - \textbf{CGPA} - \textbf{8.9/10}}{June 2009 -- May 2013}
+        {Bachelor of Science in Mechatronics Engineering}{June 2009 -- May 2013}
       \resumeItemListStart
         \resumeItem{\normalsize{Control Theory, Analog and digital circuit design, Embedded Systems, PLC, Hydraulic and Pneumatic systems.}}
       \resumeItemListEnd
@@ -259,12 +258,19 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{\normalsize{Languages:}}{ \normalsize{Python, MATLAB/ Simulink, JAVA, C/C++, TypeScript, HTML, Structured Text (PLC),YAML, XML, SQL}} \\
-     \textbf{\normalsize{Technologies: }}{\normalsize{AWS, Big Query, Grafana, Influxdb, Wireguard, MQTT, REST, Docker, Linux, SCADA, MODBUS, OPC, ARM, GIT, Polarion}} \\
-     \textbf{\normalsize{Frameworks: }}{\normalsize{FastAPI, Django, pytest, opencv, pymodbus, Angular cli}} \\
-     \textbf{\normalsize{Automotive industly tools: }}{\normalsize{MDA, INCA, Vehicle Spy, dSPACE, neoVI, High Performance Driver Education from GM}} \\
+     \vspace{4pt}
+     \textbf{\normalsize{Technologies: }}{\normalsize{AWS, Big Query, Grafana, Influxdb, Wireguard, Docker, Linux, ARM, GIT, Polarion}} \\
+     \vspace{4pt}
+     \textbf{\normalsize{Frameworks: }}{\normalsize{FastAPI, Django, pytest, opencv, pymodbus, socketCAN}} \\
+     \vspace{4pt}
+     \textbf{\normalsize{Automotive industry tools: }}{\normalsize{MDA, INCA, Vehicle Spy, dSPACE, neoVI, High Performance Driver Education from GM}} \\
+     \vspace{4pt}
+     \textbf{\normalsize{Standards: }}{\normalsize{OCPP 1.6, OCPP 2.0, ISO-15118, ISO-65851, MODBUS, CAN, REST API, Websockets,
+     OPC UA, OBD2, EEBUS}} \\
     }}
  \end{itemize}
- \vspace{-15pt}
+\vspace{-10pt}
 
 
 \end{document}
+
